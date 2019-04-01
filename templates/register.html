@@ -1,0 +1,31 @@
+<html>
+<head>
+	<style>
+		body{
+			background-image:url("image/block.jpg");
+			background-image: url("{{ url_for('static', filename = 'block.jpg') }}");
+		}
+	</style>
+</head>
+<body>
+
+
+
+<form method="POST" action="http://127.0.0.1:5000/register/">
+	<h1><center>BLOCKCHAIN IN REAL ESTATE</center></h1>
+<label><h3>Land owner</label>&nbsp&nbsp<input type="text" name="land_owner_name" required></h3>
+<label><h3>Address</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nsbp<input type="text" name="address"required></h3>
+<label><h3>Land_type</label>&nbsp&nbsp&nbsp&nbsp<input type="text" name="land_type" required></h3>
+<label><h3>Land Size</label>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="land_size" required></h3>
+<label><h3>Location</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="location" required></h3>
+<label><h3>Facilities</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="facilities" required></h3>
+<label><h3>Surrended by</label>&nbsp<input type="text" name="surrended_by"></h3>
+<label><h3>Aadhar_card_no</label>&nbsp&nbsp<input type="text" name="Aadhar_card_no" required></h3>
+<label><h3>Original_land_value</label>&nbsp&nbsp<input type="text" name="Original_land_value" required></h3>
+
+<label><h3>Land_value_after_bought</label>&nbsp<input type="text" name="Land_value_after_bought"></h3>
+
+<center><input type="submit" value="Submit"></center>
+</form>
+</body>
+</html>

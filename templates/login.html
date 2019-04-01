@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		body{
+			background-image:url("{{ url_for('static', filename = 'block.jpg') }}");
+			background-image:url("image/block.jpg");
+
+		}
+	</style>
+	<!-- <script type="text/javascript">
+		var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+	</script> -->
+</head>
+<body>
+	<div>
+<h1><center>BLOCKCHAIN TECHNOLOGY IN REAL ESTATE</center></h1>
+<form method="post" action='http://localhost:5000/result'>
+<center><label><h3>Username</label> <input type="text" name="Username" /></h3>
+<center><label><h3>Password</label><input type="password" name="Password" ></h3>
+<input type="submit" value="Login" />
+</label></center></label></center>
+</form>
+<div>
+<center>
+<form method="post" action='http://127.0.0.1:5000/signup'>
+<lable><h3>signup</lable></h3><br>&nbsp;&nbsp;
+<label>Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="s_username"><br><br>
+<label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="s_password"><br><br>
+<label>Retype-Password</label>&nbsp;&nbsp;<input type="password" name="pass1"><br><br>
+<input type="submit" value="register"  />
+</center>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+			background-image:url("{{ url_for('static', filename = 'block.jpg') }}");
+						background-image:url("static/block.jpg");
+
+	</style>
+</head>
+<body background=url("{{ url_for('static', filename = 'block.jpg') }}")>
+<table border = 1>
+         
+         {% for i in range(10) %}
+            <tr>
+              	<td>{{table[i]}}<td>
+               <td> {{result[i]}} </td>
+            </tr>
+         {% endfor %}
+        
+      </table>
+
+</body>
+</html>
